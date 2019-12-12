@@ -26,6 +26,16 @@ Por si no fuera suficiente, tu compañero de empresa al que enviaron a cliente a
 
 **WARNING**: no alteres la clase `Item` o las propiedades de `Items`  porque el colegio profesional de goblings no cree en la propiedad compartida del código y suele enviar inquisidores por la tienda de vez en cuando para chequear que se respetan su certificación de _gobbling inside_.
 
+Aquí está el **repo donde Dobbie publicó el código**, que en realidad es el repo de Emily Bache con el kata para varios lenguajes:
+https://github.com/emilybache/GildedRose-Refactoring-Kata
+
+Las **reglas de la lógica del negocio** están "explicadas" aquí:
+http://iamnotmyself.com/2011/02/14/refactor-this-the-gilded-rose-kata/ 
+
+Aquí los **casos test**:
+https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/master/texttests/ThirtyDays
+
+
 ### Base de datos
 
 1. Crea una base de datos SQL que permita realizar CRUD sobre el inventario.
