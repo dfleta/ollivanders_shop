@@ -61,11 +61,12 @@ Como quieres modernizar un poco el sistema de gestión de la tienda de Ollivande
 Esto supone tres capas en tu aplicación.
 
 1. Capa de presentación y _frontend_.
-   - Utilizando HTML y CSS construye un pequeño sitio web para la intranet, con una interfaz de usuario/a que permita a Ollivander realizar las operaciones CRUD básicas. 
+   - Utilizando HTML y CSS construye un pequeño sitio web para la intranet, con una interfaz de usuario/a que permita a Ollivander realizar las operaciones de la lógica. 
 2. Capa de lógica y _backend_
    - En el back encapsularás la lógica del negocio que has programado. Utilizarás un microframewwork llamado Flask para:
      - Atender y responder las peticiones que lleguen a través de un navegador web con las consulas de a la base de datos.
-3. Acceso a datos (bakcend)
+     - Construir una API REST que con dos _end points: un recurso devuelve el inventario y el otro la actualización del inventario.
+3. Acceso a datos (_backend_)
    - Mediante Flask, escribe el código necesario de la capa de acceso a datos, que conecte las peticiones web con la base de datos, para realizar las operaciones CRUD básicas.
 
 
