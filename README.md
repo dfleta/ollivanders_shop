@@ -24,7 +24,7 @@ Por si no fuera suficiente, tu compañero de empresa al que enviaron a cliente a
 2. El código existente pasa los casos test. Asegúrate de que el tuyo también, sin modificarlos.
 3. Haz un evolutivo del sistema para que sea posible añadir al inventario un nuevo tipo de item llamado "_Conjured_". Los “_Conjured_” items degradan su calidad el doble de rápido que un item normal. Añade esta lógica al sistema así como los casos test que necesites.
 
-**WARNING**: no alteres la clase `Item` o las propiedades de `Items`  porque el colegio profesional de goblings no cree en la propiedad compartida del código y suele enviar inquisidores por la tienda de vez en cuando para chequear que se respetan su certificación de _gobbling inside_.
+**WARNING**: no alteres la clase `Item` o las propiedades de `Items`  porque el colegio profesional de goblings no cree en la propiedad compartida del código y suele enviar inquisidores por la tienda de vez en cuando para chequear no dos sino tres, digo tres cosas sino cuatro, no cuatro sino cinco cosas, _oh f*ck!_ que se respetan su certificación de _gobbling inside_.
 
 Aquí está el **repo donde Dobbie publicó el código**, que en realidad es el repo de Emily Bache con el kata para varios lenguajes:
 https://github.com/emilybache/GildedRose-Refactoring-Kata
@@ -67,10 +67,4 @@ Esto supone tres capas en tu aplicación.
      - Atender y responder las peticiones que lleguen a través de un navegador web con las consulas de a la base de datos.
      - Construir una API REST que con dos _end points_: un recurso devuelve el inventario y el otro la actualización del inventario.
 3. Acceso a datos (_backend_)
-   - Mediante Flask, escribe el código necesario de la capa de acceso a datos, que conecte las peticiones web con la base de datos, para realizar las operaciones CRUD básicas.
-
-
-
-
-
-
+   - Mediante Flask, escribe el código necesario de la capa de acceso a datos, que conecte las peticiones web con la base de datos, para realizar las operaciones de la lógica.
