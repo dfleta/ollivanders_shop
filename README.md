@@ -4,7 +4,7 @@
 
 El famoso negocio de Ollivander ha crecido. Antes consistía en esto:
 
-![Video Harry Potter eligiendo varita](https://www.youtube.com/watch?v=gRqY1nxGGE4 "Harry Potter doin' work")
+[Video Harry Potter eligiendo varita](https://www.youtube.com/watch?v=gRqY1nxGGE4 "Harry Potter doin' work")
 
 Como la demanda de productos mágicos no para de crecer, la expansión del negocio es inevitable para sobrevivir a Amazon. 
 
@@ -24,9 +24,9 @@ Por si no fuera suficiente, tu compañero de empresa al que enviaron a cliente a
 2. El código existente pasa los casos test. Asegúrate de que el tuyo también, sin modificarlos.
 3. Haz un evolutivo del sistema para que sea posible añadir al inventario un nuevo tipo de item llamado "_Conjured_". Los “_Conjured_” items degradan su calidad el doble de rápido que un item normal. Añade esta lógica al sistema así como los casos test que necesites.
 
-**WARNING**: no alteres la clase `Item` o las propiedades de `Items`  porque el colegio profesional de goblings no cree en la propiedad compartida del código y suele enviar inquisidores por la tienda de vez en cuando para chequear no dos sino tres, digo tres cosas sino cuatro, no cuatro sino cinco cosas, _oh f*ck!_ que se respetan su certificación de _gobbling inside_.
+**WARNING**: no alteres la clase `Item` o las propiedades de `Items`  porque el colegio profesional de goblings no cree en la propiedad compartida del código y suele enviar inquisidores por la tienda de vez en cuando para chequear no dos sino tres, digo tres cosas sino cuatro, no cuatro sino cinco cosas, _oh f*ck!_ que han de respetar su certificación de _gobbling inside_.
 
-Aquí está el **repo donde Dobbie publicó el código**, que en realidad es el repo de Emily Bache con el kata para varios lenguajes:
+Aquí está el **repo donde Dobbie publicó el código**, que en realidad es el repo de Emily Bache con el **kata de refactorización "Gilded Rose"** para varios lenguajes:
 https://github.com/emilybache/GildedRose-Refactoring-Kata
 
 Las **reglas de la lógica del negocio** están "explicadas" aquí:
@@ -69,4 +69,5 @@ Esto supone tres capas en tu aplicación.
 3. Acceso a datos (_backend_)
    - Mediante Flask, escribe el código necesario de la capa de acceso a datos, que conecte las peticiones web con la base de datos, para realizar las operaciones de la lógica. Recuerda que la lógica de la aplicación ha de ser agnóstica respecto a la base de datos utilizada.
 4. Base de datos: reutiliza tus conocimientos de Mongo Atlas del primer trimestre, o aprovecha para implementar una base de datos relacional con MySQL.
+5. Pensando en introducir un flujo de trabajo de Integración Continua y Entrega Continua (CI /CD) prepararás un contenedor [Docker](https://www.docker.com/ "Docker") de desarrollo y pruebas y otro contenedor docker para despliegue. De momento, con Python es suficiente [tox](https://tox.readthedocs.io/en/latest/ "tox")
 
