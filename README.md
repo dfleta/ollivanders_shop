@@ -4,7 +4,7 @@
 
 El famoso negocio de Ollivander ha crecido. Antes consistía en esto:
 
-![Video Harry Potter eligiendo varita](https://www.youtube.com/watch?v=b3tjPTztNck "Harry Potter doin' work")
+![Video Harry Potter eligiendo varita](https://www.youtube.com/watch?v=gRqY1nxGGE4 "Harry Potter doin' work")
 
 Como la demanda de productos mágicos no para de crecer, la expansión del negocio es inevitable para sobrevivir a Amazon. 
 
@@ -56,15 +56,17 @@ Conjured Mana Cake, 3, 6
 
 ### App web
 
-Como quieres modernizar un poco el sistema de gestión de la tienda de Ollivander, decides desarrollar una app web que permita visualizar el estado del inventario y realizar las operaciones básicas CRUD.
+Como quieres modernizar un poco el sistema de gestión de la tienda de Ollivander, decides desarrollar una app web que permita visualizar el estado del inventario, actualizar la calidad de los items y realizar operaciones básicas CRUD.
 
 Esto supone tres capas en tu aplicación.
 
 1. Capa de presentación y _frontend_.
-   - Utilizando HTML y CSS construye un pequeño sitio web para la intranet, con una interfaz de usuario/a que permita a Ollivander realizar las operaciones de la lógica. 
+   - Utilizando HTML, CSS y JS construye un pequeño sitio web para la intranet, con una interfaz de usuario/a que permita a Ollivander realizar las operaciones de la lógica. 
 2. Capa de lógica y _backend_
    - En el back encapsularás la lógica del negocio que has programado. Utilizarás un microframework llamado Flask para:
      - Atender y responder las peticiones que lleguen a través de un navegador web con las consulas de a la base de datos.
-     - Construir una API REST que con dos _end points_: un recurso devuelve el inventario y el otro la actualización del inventario.
+     - Construir una API REST que con al menos dos _end points_: un recurso devuelve el inventario y el otro la actualización del inventario. Si implementas el resto de operaciones CRUD, tendrás que añadir los _end points_ correspondientes.
 3. Acceso a datos (_backend_)
-   - Mediante Flask, escribe el código necesario de la capa de acceso a datos, que conecte las peticiones web con la base de datos, para realizar las operaciones de la lógica.
+   - Mediante Flask, escribe el código necesario de la capa de acceso a datos, que conecte las peticiones web con la base de datos, para realizar las operaciones de la lógica. Recuerda que la lógica de la aplicación ha de ser agnóstica respecto a la base de datos utilizada.
+4. Base de datos: reutiliza tus conocimientos de Mongo Atlas del primer trimestre, o aprovecha para implementar una base de datos relacional con MySQL.
+
